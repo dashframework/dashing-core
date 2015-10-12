@@ -70,7 +70,7 @@ $button-disabled: "&[disabled], &.disabled, &.button-disabled";
     width: 100%;
   }
 
-  &.button-large { font-size: $medium-size !important; }
+  &.button-large { font-size: $font-size-medium !important; }
   &.button-primary { @include button($background-color: $blue, $type-color: $white); }
   &.button-secondary { @include button($background-color: $gray-200, $type-color: $gray-900); }
 }
