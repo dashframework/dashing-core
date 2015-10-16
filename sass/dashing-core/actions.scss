@@ -20,18 +20,18 @@ $button-disabled: "&[disabled], &.disabled, &.button-disabled";
 /* Actions Mixins
   =========================================================================== */
 
-@mixin button($background-color, $type-color) {
+@mixin button($background-color, $color) {
   background-color: $background-color;
-  color: $type-color;
+  color: $color;
 
   &:hover, &:focus {
     background-color: darken($background-color, 10%);
-    color: $type-color;
+    color: $color;
   }
 }
 
-@mixin action($type-color) {
-  color: $type-color;
+@mixin action($color) {
+  color: $color;
 
   &:hover, &:focus {
     opacity: 0.6;
@@ -44,7 +44,7 @@ $button-disabled: "&[disabled], &.disabled, &.button-disabled";
 #{$buttons} {
   @extend %action;
   @include border-radius(50px);
-  @include button($background-color: $blue, $type-color: $white);
+  @include button($background-color: $blue, $color: $white);
   @include user-select(none);
 
   -webkit-font-smoothing: auto;
@@ -71,8 +71,8 @@ $button-disabled: "&[disabled], &.disabled, &.button-disabled";
   }
 
   &.button-large { font-size: $font-size-medium !important; }
-  &.button-primary { @include button($background-color: $blue, $type-color: $white); }
-  &.button-secondary { @include button($background-color: $gray-200, $type-color: $gray-900); }
+  &.button-primary { @include button($background-color: $blue, $color: $white); }
+  &.button-secondary { @include button($background-color: $gray-200, $color: $gray-900); }
 }
 
 .action {
