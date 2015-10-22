@@ -9,6 +9,7 @@ $button-disabled: "&[disabled], &.disabled, &.button-disabled";
 
 %action {
   @include user-select(none);
+  border: none;
   cursor: pointer;
   font-size: 0.9rem;
   font-weight: $font-weight-semibold;
