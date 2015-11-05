@@ -19,7 +19,16 @@ $desktop-large: "all and (min-width: 96em)" !default;
   list-style: none;
 }
 
-%clearfix, .clearfix { overflow: auto; }
+%clearfix, .clearfix {
+ *zoom: 1;
+
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after { clear: both; }
+}
 
 /* Core Mixins
   =========================================================================== */
