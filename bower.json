@@ -1,6 +1,6 @@
 {
   "name": "dashing-core",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "main": "sass/dashing-core.scss",
 
   "homepage": "http://developers.samaritanministries.org/",
